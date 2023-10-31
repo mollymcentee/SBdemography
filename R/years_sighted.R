@@ -1,17 +1,14 @@
 #'@title years sighted
-#'@param surveys db download of the survey dolphin file from MMDD
-#'@param focals db download of the focal dolphin file from MMDD
+#'@param sightings df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function
 #'@import lubridate
 #'@import dplyr
 #'@export
 
 
 
-years.sighted <- function(surveys, focals) {
+years.sighted <- function(sightings) {
   
-  all.sightings <- agg.sightings(surveys, focals)
-  
-  years <- all.sightings %>%
+  years <- sightings %>%
     mutate(year = year(Observation.Date)) %>%
     select(Dolphin.ID, year) %>%
     distinct() %>%
@@ -20,5 +17,4 @@ years.sighted <- function(surveys, focals) {
     mutate(diff = year - lag(year))
 
   return (years)
-  
 }

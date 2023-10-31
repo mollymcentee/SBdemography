@@ -1,11 +1,11 @@
-#'@title aggregate sightings
+#'@title create sighting df
 #'@param surveys db download of the survey dolphin file from MMDD
 #'@param focals db download of the focal dolphin file from MMDD
 #'@export
 
 
 
-agg.sightings <- function(surveys, focals) {
+sightings <- function(surveys, focals) {
   
   ###combine survey and focal sightings, remove low certainty observations, duplicates, and update formats
   surveys <- surveys[c("Observation.Date", "Dolphin.ID", "Dolphin.ID.Certainty")]
