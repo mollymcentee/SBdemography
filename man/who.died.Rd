@@ -4,12 +4,10 @@
 \alias{who.died}
 \title{who died}
 \usage{
-who.died(surveys, focals, demography, time.cutoff)
+who.died(sightings, demography, time.cutoff)
 }
 \arguments{
-\item{surveys}{db download of the survey dolphin file from MMDD}
-
-\item{focals}{db download of the focal dolphin file from MMDD}
+\item{sightings}{df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function}
 
 \item{demography}{db download of life history file from MMDD}
 

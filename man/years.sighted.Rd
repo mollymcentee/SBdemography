@@ -4,12 +4,10 @@
 \alias{years.sighted}
 \title{years sighted}
 \usage{
-years.sighted(surveys, focals)
+years.sighted(sightings)
 }
 \arguments{
-\item{surveys}{db download of the survey dolphin file from MMDD}
-
-\item{focals}{db download of the focal dolphin file from MMDD}
+\item{sightings}{df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function}
 }
 \description{
 years sighted

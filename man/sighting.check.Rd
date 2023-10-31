@@ -4,14 +4,14 @@
 \alias{sighting.check}
 \title{sighting check}
 \usage{
-sighting.check(surveys, focals, demography)
+sighting.check(sightings, demography)
 }
 \arguments{
-\item{surveys}{db download of the survey dolphin file from MMDD}
-
-\item{focals}{db download of the focal dolphin file from MMDD}
+\item{sightings}{df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function}
 
 \item{demography}{db download of life history file from MMDD}
+
+\item{focals}{db download of the focal dolphin file from MMDD}
 }
 \description{
 sighting check
