@@ -14,5 +14,5 @@ who.died(sightings, demography, time.cutoff)
 \item{time.cutoff}{date we want to use to calculate time since the last sighting}
 }
 \description{
-who died
+outputs a list of individuals who have exceeded their maximum sighting gap
 }

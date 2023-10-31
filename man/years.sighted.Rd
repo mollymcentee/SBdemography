@@ -7,8 +7,9 @@
 years.sighted(sightings)
 }
 \arguments{
-\item{sightings}{df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function}
+\item{sightings}{df of sightings with Observation.Date and Dolphin.ID as columns - output from sightings function}
 }
 \description{
-years sighted
+Outputs a dataframe of all of the years each individual was sighted, and the gaps between those years.
+Used for assigning death dates.
 }

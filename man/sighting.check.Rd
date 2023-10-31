@@ -10,9 +10,7 @@ sighting.check(sightings, demography)
 \item{sightings}{df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function}
 
 \item{demography}{db download of life history file from MMDD}
-
-\item{focals}{db download of the focal dolphin file from MMDD}
 }
 \description{
-sighting check
+outputs a dataframe of observations that occurred before an individuals birth or after an individuals death in order to catch date typos or resurrections.
 }

@@ -12,5 +12,5 @@ sightings(surveys, focals)
 \item{focals}{db download of the focal dolphin file from MMDD}
 }
 \description{
-create sighting df
+outputs a dataframe containing each individuals sighting history
 }

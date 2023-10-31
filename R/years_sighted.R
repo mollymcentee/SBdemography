@@ -1,5 +1,7 @@
 #'@title years sighted
-#'@param sightings df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function
+#'@description Outputs a dataframe of all of the years each individual was sighted, and the gaps between those years. 
+#'  Used for assigning death dates.
+#'@param sightings df of sightings with Observation.Date and Dolphin.ID as columns - output from sightings function
 #'@import lubridate
 #'@import dplyr
 #'@export
