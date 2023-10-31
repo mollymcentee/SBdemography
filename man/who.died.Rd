@@ -7,12 +7,12 @@
 who.died(sightings, demography, time.cutoff)
 }
 \arguments{
-\item{sightings}{df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function}
+\item{sightings}{df of sightings with Observation.Date and Dolphin.ID as columns - output from sightings function}
 
 \item{demography}{db download of life history file from MMDD}
 
 \item{time.cutoff}{date we want to use to calculate time since the last sighting}
 }
 \description{
-outputs a list of individuals who have exceeded their maximum sighting gap
+outputs a df of individuals who have exceeded their maximum sighting gap
 }

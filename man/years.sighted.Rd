@@ -10,6 +10,6 @@ years.sighted(sightings)
 \item{sightings}{df of sightings with Observation.Date and Dolphin.ID as columns - output from sightings function}
 }
 \description{
-Outputs a dataframe of all of the years each individual was sighted, and the gaps between those years.
+Outputs a df of all of the years each individual was sighted, and the gaps between those years.
 Used for assigning death dates.
 }

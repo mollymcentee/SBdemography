@@ -1,6 +1,6 @@
 #'@title who died
-#'@description outputs a list of individuals who have exceeded their maximum sighting gap
-#'@param sightings df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function
+#'@description outputs a df of individuals who have exceeded their maximum sighting gap
+#'@param sightings df of sightings with Observation.Date and Dolphin.ID as columns - output from sightings function
 #'@param demography db download of life history file from MMDD
 #'@param time.cutoff date we want to use to calculate time since the last sighting
 #'@export

@@ -1,5 +1,5 @@
 #'@title create sighting df
-#'@description outputs a dataframe containing each individuals sighting history
+#'@description outputs a df containing each individual's sighting history
 #'@param surveys db download of the survey dolphin file from MMDD
 #'@param focals db download of the focal dolphin file from MMDD
 #'@export

@@ -7,10 +7,10 @@
 sighting.check(sightings, demography)
 }
 \arguments{
-\item{sightings}{df of sighitngs with Observation.Date and Dolphin.ID as columns - output from sightings function}
+\item{sightings}{df of sightings with Observation.Date and Dolphin.ID as columns - output from sightings function}
 
 \item{demography}{db download of life history file from MMDD}
 }
 \description{
-outputs a dataframe of observations that occurred before an individuals birth or after an individuals death in order to catch date typos or resurrections.
+outputs a df of observations that occurred before an individual's birth or after an individual's death in order to catch date typos or resurrections.
 }
