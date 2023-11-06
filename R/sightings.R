@@ -19,7 +19,7 @@ sightings <- function(surveys, focals, film, biopsies, google_doc, misc) {
   all.sightings <- subset(all.sightings, Dolphin.ID.Certainty != "LOW")
   all.sightings <- all.sightings[c("Observation.Date", "Dolphin.ID")]
   all.sightings <- unique(all.sightings)
-  all.sightings <- all.sightings[complete.cases(all_sightings)]
+  all.sightings <- all.sightings[complete.cases(all.sightings)]
   all.sightings$Observation.Date <- as.Date(all.sightings$Observation.Date)
   all.sightings$Dolphin.ID <- as.factor(all.sightings$Dolphin.ID)
   
