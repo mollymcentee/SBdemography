@@ -6,12 +6,16 @@
 
 
 
-sightings <- function(surveys, focals) {
+sightings <- function(surveys, focals, film, biopsies, google_doc, misc) {
   
   ###combine survey and focal sightings, remove low certainty observations, duplicates, and update formats
   surveys <- surveys[c("Observation.Date", "Dolphin.ID", "Dolphin.ID.Certainty")]
   focals <- focals[c("Observation.Date", "Dolphin.ID", "Dolphin.ID.Certainty")]
-  all.sightings <- rbind(surveys, focals)
+  film <- film[,c("Observation.Date", "Dolphin.ID", "Dolphin.ID.Certainty")]
+  biopsies <- biopsies[,c("Observation.Date", "Dolphin.ID", "Dolphin.ID.Certainty")]
+  google_doc <- google_doc[,c("Observation.Date", "Dolphin.ID", "Dolphin.ID.Certainty")]
+  misc <- misc[,c("Observation.Date", "Dolphin.ID", "Dolphin.ID.Certainty")]
+  all.sightings <- rbind(surveys, focals, film, biopsies, google_doc, misc)
   all.sightings <- subset(all.sightings, Dolphin.ID.Certainty != "LOW")
   all.sightings <- all.sightings[c("Observation.Date", "Dolphin.ID")]
   all.sightings <- unique(all.sightings)
